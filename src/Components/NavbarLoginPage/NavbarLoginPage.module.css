@@ -1,0 +1,65 @@
+.nav {
+  max-width: 1128px;
+  margin: auto;
+  padding: 12px 0 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.nav > a {
+  width: 180px;
+}
+.nav > img {
+  padding-left: 50px;
+}
+@media (max-width: 768px) {
+  .nav > a {
+    padding: 0 5px;
+  }
+}
+.navbarbuttons > button {
+  /* font-size: 16px; */
+  padding: 10px 12px;
+  text-decoration: none;
+  margin-right: 12px;
+  
+  outline: none;
+  vertical-align: baseline;
+ 
+}
+
+.joinNow {
+  color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  width: 100px;
+}
+
+.joinNow:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  color: rgba(0, 0, 0, 1);
+}
+
+.signIn{
+    color: #127fde;
+    font-size: 18px;
+    border-radius: 20px;
+    border-color: #127fde;
+    border: 0.5px solid;
+    width: 120px;
+    box-shadow: inset 0 0 0 1.3px #0a66c2;
+    transition-duration: 160ms;
+    font-weight: 600;
+    line-height: 40px;
+    height: 60px;
+    background-color: white;
+    align-content: center;
+}
+.signIn:hover{
+    background-color: #dae8f5;
+    color: #084275;
+}
