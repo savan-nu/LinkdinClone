@@ -19,3 +19,6 @@ div,h1,img{
     outline: none;
     vertical-align: baseline;
 }
+*{
+  text-decoration: none;
+}
