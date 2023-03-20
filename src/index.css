@@ -19,6 +19,9 @@ div,h1,img{
     outline: none;
     vertical-align: baseline;
 }
+li{
+  list-style-type: none;
+}
 *{
   text-decoration: none;
 }

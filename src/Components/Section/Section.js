@@ -1,8 +1,12 @@
 import React from 'react'
 import styles from "./Section.module.css"
 import sectionSidePhoto from "../../assets/image/sectionSidePhoto.svg"
-import googleSvg from "../../assets/image/google.svg"
-export default function Section() {
+import googleSvg from "../../assets/image/google.svg";
+
+export default function Section({signIn}) {
+  const handleClick = () =>{
+    signIn();
+  }
   return (
     <div className={styles.section}>
       <div className={styles.banner}>
@@ -22,7 +26,7 @@ export default function Section() {
                <div className={styles.orLine}>
                 <hr></hr><p>or</p><hr></hr>
                </div>
-               <button className={styles.google}>
+               <button className={styles.google} onClick = {handleClick} >
                 <img src = {googleSvg} alt = "Google Login" className={styles.googleIcon}/>
                 Sign in With Google
                </button> 

@@ -1,0 +1,13 @@
+.newsRender{
+  
+}
+.newsRender>h5{
+    margin: 0;
+    margin-left: 16px;
+}
+.newsRender>p{
+    font-size: 12px;
+    padding-left: 16px;
+    color: rgba(0,0,0,0.6);
+    margin-top: 5px;
+}

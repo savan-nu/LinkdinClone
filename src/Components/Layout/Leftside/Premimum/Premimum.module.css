@@ -1,0 +1,40 @@
+.premimum{
+    font-size: 12px;
+    padding-top: 12px;
+    padding-left: 5px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.premimum>span{
+    
+    color: rgba(0,0,0,0.6);
+  
+}
+.premimumLink{
+    display: grid;
+    color: black;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    font-weight: 800;
+
+}
+.premimumLink:hover{
+    color:  #0A66C2;
+}
+.bookmark{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+.bookmarkLink{
+    padding-right: 10px;
+    padding-left: 20px;
+
+}
