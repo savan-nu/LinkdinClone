@@ -1,0 +1,17 @@
+.postButton{
+   /* margin-top: 25px; */
+   position: relative;
+   left: -145px;
+
+   width: 80px;
+   height: 30px;
+   border-radius: 10px;
+   border: 0;
+   background-color: #0A66C2;
+   color:white;
+   font-weight: 600;
+   cursor: pointer;
+   margin-bottom: 20px;
+   
+}
+

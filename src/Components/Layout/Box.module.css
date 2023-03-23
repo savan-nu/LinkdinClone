@@ -1,0 +1,30 @@
+.box{
+    text-align: center;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: box-shadow 80ms;
+  position: relative;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-left: 150px;
+  width: 280px;
+}
+@media (max-width : 614px) {
+  .box{
+    margin-left: 0px !important;
+    width: 100%;
+  }
+}
+@media (max-width : 1261px) {
+  .box{
+    margin-left: 20px !important;
+  }
+}
+@media (max-width : 1068px) {
+  .box{
+    width: 100%;
+    margin-right: 20px !important;
+  }
+}

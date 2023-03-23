@@ -1,0 +1,115 @@
+.article{
+    padding: 0;
+   
+    overflow: visible;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* border-bottom: 1px solid red; */
+}
+.sharedActor{
+    padding-right: 40px;
+    flex-wrap: nowrap;
+    padding: 12px 16px 0;
+    margin-bottom: 8px;
+    align-items: center;
+    display: flex;
+    margin-right: 12px;
+    flex-grow: 1;
+    overflow: hidden;
+    text-decoration: none;
+}
+.sharedActor>img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 8px;
+    overflow: hidden;
+}
+.userInfo>span{
+     text-align: left;
+     font-size: 12px;
+     color: rgba(0, 0, 0, 0.6);
+}
+.userInfo>span:first-child{
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+.discription{
+    padding: 0 16px;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 14px;
+    text-align: left;
+}
+.sharedImage{
+    margin-top: 8px;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: #f9fafb;
+
+}
+.sharedImage>img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.socialCounts{
+    line-height: 1.3;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    margin: 0 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #e9e5df;
+    list-style: none;
+}
+.socialCounts>li{
+    margin-right: 5px;
+    font-size: 12px;
+}
+.socialCounts>li{
+    margin-right: 5px;
+    font-size: 12px;
+    
+}
+.socialCounts>li>button{
+    display: flex;
+    pointer-events: none;
+}
+.socialCounts>li:last-child>span{
+    margin-top: 12px;
+}
+.socialAction{
+    align-items: center;
+    display: flex;
+    /* justify-content: flex-start; */
+    margin: 0;
+    min-height: 40px;
+    padding: 4px 8px;
+    justify-content: space-around;
+}
+.socialAction>button{
+    display: inline-flex;
+    align-items: center;
+    padding: 8px;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.socialAction>button:hover{
+    background-color: rgba(0, 0, 0, 0.08);
+}
+@media (min-width : 768px) {
+    .socialAction>button>span{
+        margin-left: 8px;
+    }
+}
