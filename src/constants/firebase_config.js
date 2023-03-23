@@ -6,6 +6,7 @@ import { getFirestore } from "firebase/firestore";
 import firebase from "firebase/compat/app";
 
 import 'firebase/auth';
+import { getStorage } from 'firebase/storage';
 const firebaseConfig = {
   apiKey: "AIzaSyDj25sCZxJewiRYUMo8rFORgnsH7PteX-0",
   authDomain: "linkedin-clone-f54a6.firebaseapp.com",
@@ -25,5 +26,6 @@ const app = initializeApp(firebaseConfig);
 export const provider = new GoogleAuthProvider();
 export const authentication = getAuth(app);
 const db = getFirestore(app);
+export const store = getStorage();
 // export {authentication,provider,storage};
 export default db;

@@ -6,7 +6,7 @@
     grid-template-columns: minmax(0,8fr) minmax(0,10fr) minmax(300px , 9fr);
     row-gap: 25px;
 }
-@media (max-width : 768px) {
+@media (max-width : 1068px) {
     .layout{
         display: flex;
         flex-direction: column;

@@ -11,9 +11,20 @@
   margin-left: 150px;
   width: 280px;
 }
-@media (max-width : 768px) {
-    .box{
-        margin: 0px;
-    }
-    
+@media (max-width : 614px) {
+  .box{
+    margin-left: 0px !important;
+    width: 100%;
+  }
+}
+@media (max-width : 1261px) {
+  .box{
+    margin-left: 20px !important;
+  }
+}
+@media (max-width : 1068px) {
+  .box{
+    width: 100%;
+    margin-right: 20px !important;
+  }
 }

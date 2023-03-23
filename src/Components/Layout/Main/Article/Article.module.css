@@ -1,7 +1,10 @@
 .article{
     padding: 0;
-    margin: 0 0  8px;
+   
     overflow: visible;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* border-bottom: 1px solid red; */
 }
 .sharedActor{
     padding-right: 40px;
@@ -60,7 +63,7 @@
 .socialCounts{
     line-height: 1.3;
     display: flex;
-    align-items: flex-start;
+    justify-content: space-between;
     overflow: auto;
     margin: 0 16px;
     padding: 8px 0;
@@ -78,7 +81,7 @@
 }
 .socialCounts>li>button{
     display: flex;
-
+    pointer-events: none;
 }
 .socialCounts>li:last-child>span{
     margin-top: 12px;
@@ -100,7 +103,10 @@
     background-color: white;
     border: 0;
     cursor: pointer;
-    
+    border-radius: 10px;
+}
+.socialAction>button:hover{
+    background-color: rgba(0, 0, 0, 0.08);
 }
 @media (min-width : 768px) {
     .socialAction>button>span{

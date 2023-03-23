@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useReducer,useContext} from "react";
 import styles from "./Leftside.module.css";
 import { Link } from "react-router-dom";
 import profile from "../../../assets/image/profile.jpeg";
@@ -6,7 +6,10 @@ import Widget from "./Widget/Widget";
 import Premimum from "./Premimum/Premimum";
 import Plus from "../../../assets/image/plus-icon.svg";
 import Box from '../Box';
-export default function Leftside() {
+import AuthContext from "../../../context/AuthContext";
+ function Leftside(props) {
+  const {user, setUser} = useContext(AuthContext);
+  
   return (
     <div className={styles.leftside}>
       <Box >
@@ -14,7 +17,7 @@ export default function Leftside() {
           <div className={styles.cardBackGround}></div>
           <Link to="" className={styles.linkTag}>
             <div className={styles.photo}>
-              <img src={profile} alt="user"></img>
+              {user && user.photoUrl ? <img src={user.photoUrl} alt="user"></img> : <img src={profile} alt="user"></img>}
             </div>
             <div className={styles.link}>Savan Vaghani</div>
           </Link>
@@ -49,3 +52,6 @@ export default function Leftside() {
     </div>
   );
 }
+
+
+export default (Leftside);
