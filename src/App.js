@@ -8,6 +8,7 @@ import Login from "./Pages/Login/Longin";
 import Home from "./Pages/Home/Home";
 import { AuthProvider } from "./context/AuthContext";
 import { setDoc, doc,collection, query,getDocs } from "firebase/firestore";
+import RegistrationForm from './Pages/SignUp/SignUp';
 
 function App() {
   // const putDataOnDataBase = async () => {
@@ -42,6 +43,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/signup" element={<RegistrationForm />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>

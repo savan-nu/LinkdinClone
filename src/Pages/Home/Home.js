@@ -18,7 +18,7 @@ export default function Home() {
   return (
   
     <div className={styles.homepage}>
-     {console.log("Home")}
+     {console.log(user)}
       <Navbar />
       <Layout />
     </div>
