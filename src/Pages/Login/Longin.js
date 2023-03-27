@@ -1,4 +1,4 @@
-import React, {useState,useContext}from "react";
+import React, {useContext}from "react";
 import NavbarLoginPage from "../../Components/NavbarLoginPage/NavbarLoginPage";
 import styles from "./Login.module.css";
 import Section from "../../Components/Section/Section";
@@ -8,8 +8,8 @@ import {
   signInAPI,
 } from "../../Actions/index";
 function Longin(props) {
-  const {user, setUser} = useContext(AuthContext);
-  console.log(user);
+  const {setUser} = useContext(AuthContext);
+  
   props.user && setUser(props.user)
   return (
     <div className={styles.contanier}>

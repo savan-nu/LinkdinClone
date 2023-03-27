@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { SIGN_OUT } from "../../../Actions/ActionType";
 import AuthContext from "../../../context/AuthContext";
 export default function SignOut() {
-  const {user, setUser} = useContext(AuthContext);
+  const {setUser} = useContext(AuthContext);
   const dispatch = useDispatch();
   const nevigate = useNavigate();
   const handleClick = () => {
